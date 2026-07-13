@@ -127,6 +127,10 @@ rss:
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
 
+    - id: "yahoo-news"
+      name: "雅虎新闻"
+      url: "https://news.yahoo.com/rss/mostviewed"
+
     - id: "the new york times"
       name: "纽约时报"
       url: "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
@@ -147,9 +151,17 @@ rss:
       name: "CNN新闻"
       url: "http://rss.cnn.com/rss/edition.rss"
 
-    - id: "Daily Telegraph"
-      name: "英国每日电讯报"
-      url: "https://www.dailytelegraph.com.au/news/breaking-news/rss"
+    - id: "huffpost"
+      name: "赫芬顿邮报"
+      url: "https://www.huffpost.com/section/world-news/feed"
+
+    - id: "cnbc"
+      name: "CNBC新闻"
+      url: "https://www.cnbc.com/id/100003114/device/rss/rss.html"
+
+    - id: "politico"
+      name: "政客"
+      url: "https://rss.politico.com/playbook.xml"
 
     - id: "BBC News"
       name: "BBC新闻"
@@ -158,6 +170,18 @@ rss:
     - id: "The Guardian"
       name: "卫报"
       url: "https://www.theguardian.com/world/rss"
+
+    - id: "rt"
+      name: "RT每日新闻"
+      url: "https://www.rt.com/rss/"
+
+    - id: "tass"
+      name: "塔斯社"
+      url: "http://tass.com/rss/v2.xml"
+
+    - id: "isna"
+      name: "伊斯兰通讯社"
+      url: "https://www.isna.ir/rss"
 
     - id: "hket.com"
       name: "香港经济日报"

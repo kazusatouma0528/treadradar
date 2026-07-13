@@ -115,6 +115,7 @@ rss:
     - id: "hacker-news"
       name: "Hacker News"
       url: "https://hnrss.org/frontpage"
+      enabled: false
 
     - id: "ruanyifeng"
       name: "阮一峰的网络日志"
@@ -128,8 +129,52 @@ rss:
 
     - id: "the new york times"
       name: "纽约时报"
-      url: "https://rsshub.app/nytimes/dual"
+      url: "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
 
+    - id: "FOX News"
+      name: "福克斯新闻"
+      url: "http://feeds.foxnews.com/foxnews/latest"
+    
+    - id: "WSP"
+      name: "华盛顿邮报"
+      url: "http://feeds.washingtonpost.com/rss/world"
+
+    - id: "WSJ.com"
+      name: "华尔街日报"
+      url: "https://feeds.a.dj.com/rss/RSSWorldNews.xml"
+
+    - id: "CNN News"
+      name: "CNN新闻"
+      url: "http://rss.cnn.com/rss/edition.rss"
+
+    - id: "Daily Telegraph"
+      name: "英国每日电讯报"
+      url: "https://www.dailytelegraph.com.au/news/breaking-news/rss"
+
+    - id: "BBC News"
+      name: "BBC新闻"
+      url: "http://feeds.bbci.co.uk/news/rss.xml"
+
+    - id: "The Guardian"
+      name: "卫报"
+      url: "https://www.theguardian.com/world/rss"
+
+    - id: "hket.com"
+      name: "香港经济日报"
+      url: "https://www.hket.com/rss/hongkong"
+
+    - id: "South China Morning Post"
+      name: "南华早报"
+      url: "https://www.scmp.com/rss/91/feed"
+
+    - id: "reddit"
+      name: "Reddit"
+      url: "https://www.reddit.com/r/worldnews/.rss"
+
+    - id: "Google News"
+      name: "谷歌新闻"
+      url: "https://news.google.com/rss"
+      
     # 自定义源示例
     # - id: "custom-feed"
     #   name: "自定义源"
@@ -224,7 +269,7 @@ display:
   # 推送区域开关（需配合上方 region_order 使用）
   regions:
     hotlist: true                     # 热榜区域：关键词匹配 / AI 智能筛选（true=显示, false=隐藏）
-    new_items: false                  # 新增热点区域：含热榜新增 + RSS 新增（true=显示, false=隐藏）
+    new_items: true                  # 新增热点区域：含热榜新增 + RSS 新增（true=显示, false=隐藏）
                                       # 注：热点词汇统计中的新增标记🆕不受此配置影响
 
     rss: true                         # RSS 订阅区域（true=显示并分析, false=隐藏并跳过分析）

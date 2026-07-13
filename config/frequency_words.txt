@@ -176,6 +176,7 @@
 /\bSDN\b/
 /\bBIS\b/
 /\bEntity\b/
+/\bShadow Fleet\b/
 
 [官方]
 习近平
@@ -200,6 +201,7 @@
 /\bUkraine\b/
 /\bKyiv‌\b/
 /\bRussia-Ukraine War‌\b/
+@8
 
 [欧洲]
 欧洲

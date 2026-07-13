@@ -156,6 +156,9 @@
 美国国务院
 美国商务部
 美国贸易代表办公室
+大选
+中期选举
+美军
 /\bTrump\b/
 /\bDonald Trump\b/
 /\bBessent\b/
@@ -164,6 +167,8 @@
 /\bDepartment of State\b/
 /\bDepartment of Commerce\b|\bDOC\b//
 /\bOffice of the United States Trade Representative\b|\bUSTR\b/
+/\bpresidential election‌\b|\bmidterm elections‌\b/
+/\bUnited States Armed Forces\b|\bU.S. military\b|\bUS Armed Forces\b/
 
 [制裁]
 制裁
@@ -187,12 +192,17 @@
 /\bMacao\b/
 @8
 
-[俄罗斯]
+[俄乌]
 俄罗斯
+乌克兰
 /\bRussia\b/
 /\bMoscow\b/
+/\bUkraine\b/
+/\bKyiv‌\b/
+/\bRussia-Ukraine War‌\b/
 
 [欧洲]
+欧洲
 英国
 法国
 德国
@@ -200,6 +210,7 @@
 意大利
 比利时
 荷兰
+/\bEurope\b/
 /\bUnited Kingdoms\b|\bEngland\b|\bLondon\b/
 /\bFrance\b|\bParis\b/
 /\bGermany\b|\bBerlin\b/
@@ -221,10 +232,12 @@
 伊拉克
 土耳其
 阿富汗
+中东
 /\bIraq\b/
 /\bIran\b/
 /\bTurkey\b/
 /\bAfghanistan\b/
+/\bMiddle East\b|\bmideast\b/
 
 [东南亚]
 日本

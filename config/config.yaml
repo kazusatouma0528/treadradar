@@ -126,19 +126,23 @@ rss:
     - id: "WSJa"
       name: "华尔街日报"
       url: "https://rsshub.app/wsj/en-us/world"
-
+      enabled: false
+      
     - id: "WSJb"
       name: "华尔街日报"
       url: "https://rsshub.app/wsj/en-us/us"
-
+      enabled: false
+      
     - id: "WSJc"
       name: "华尔街日报"
       url: "https://rsshub.app/wsj/en-us/politics"
-
+      enabled: false
+      
     - id: "WSJd"
       name: "华尔街日报"
       url: "https://rsshub.app/wsj/en-us/economy"
-
+      enabled: false
+      
     - id: "the new york times"
       name: "纽约时报"
       url: "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
@@ -150,19 +154,23 @@ rss:
     - id: "WSPb"
       name: "华盛顿邮报"
       url: "https://rsshub.rssforever/washingtonpost/app/business"
-
+      enabled: false
+      
     - id: "WSPc"
       name: "华盛顿邮报"
       url: "https://rsshub.rssforever/washingtonpost/app/politics"
-
+      enabled: false
+      
     - id: "WSPd"
       name: "华盛顿邮报"
       url: "https://rsshub.rssforever/washingtonpost/app/investigations"
-
+      enabled: false
+      
     - id: "foreignaffairs"
       name: "外交事务"
       url: "https://rsshub.rssforever/foreignaffairs/rss"
-
+      enabled: false
+      
     - id: "FOX News"
       name: "福克斯新闻"
       url: "http://feeds.foxnews.com/foxnews/latest"
@@ -174,30 +182,40 @@ rss:
     - id: "The Economista"
       name: "经济学人"
       url: "https://rsshub.app/economist/espresso"
-
+      enabled: false
+      
     - id: "The Economistb"
       name: "经济学人"
       url: "https://rsshub.app/economist/business"
-
+      enabled: false
+      
     - id: "The Economistc"
       name: "经济学人"
       url: "https://rsshub.app/economist/finance-and-economics"
-
+      enabled: false
+      
     - id: "Bloomberga"
       name: "彭博社"
       url: "https://rsshub.rssforever/bloomberg/bbiz"
-
+      enabled: false
+      
     - id: "Bloombergb"
       name: "彭博社"
       url: "https://rsshub.rssforever/bloomberg/bpol"
-
+      enabled: false
+      
     - id: "Bloombergc"
       name: "彭博社"
       url: "https://rsshub.rssforever/bloomberg"
-
+      enabled: false
+      
     - id: "cnbc"
       name: "CNBC新闻"
       url: "https://www.cnbc.com/id/100003114/device/rss/rss.html"
+
+    - id: "huffpost"
+      name: "赫芬顿邮报"
+      url: "https://www.huffpost.com/section/world-news/feed"
     
     - id: "BBC News"
       name: "BBC新闻"
@@ -210,14 +228,12 @@ rss:
     - id: "reutersa"
       name: "路透社"
       url: "https://rsshub.app/reuters/world"
-    
+      enabled: false
+      
     - id: "reutersb"
       name: "路透社"
       url: "https://rsshub.app/reuters/business/finance"
-
-    - id: "huffpost"
-      name: "法国赫芬顿邮报"
-      url: "https://www.huffpost.com/section/world-news/feed"
+      enabled: false
 
     - id: "lamonde"
       name: "法国世界报"
@@ -226,11 +242,13 @@ rss:
     - id: "nikkeia"
       name: "日经新闻"
       url: "https://rsshub.app/nikkei/cn/cn/china/economy"
-
+      enabled: false
+      
     - id: "nikkeib"
       name: "日经新闻"
       url: "https://rsshub.app/nikkei/cn/cn/politicsaeconomy/economic-policy"
-
+      enabled: false
+      
     - id: "rt"
       name: "RT每日新闻"
       url: "https://www.rt.com/rss/"
@@ -263,6 +281,37 @@ rss:
       name: "雅虎新闻"
       url: "https://news.yahoo.com/rss/mostviewed"
 
+#以下是新测试路由
+
+    - id: "latimes"
+      name: "洛杉矶时报"
+      url: "https://www.latimes.com/world-nation/rss2.0.xml"
+
+    - id: "dailymail"
+      name: "每日邮报"
+      url: "https://www.dailymail.co.uk/home/index.rss"      
+
+    - id: "independent"
+      name: "独立报"
+      url: "http://www.independent.co.uk/news/uk/rss"    
+
+    - id: "zeit"
+      name: "德时代周报"
+      url: "http://newsfeed.zeit.de/index"    
+
+    - id: "financialpost"
+      name: "加金融邮报"
+      url: "https://business.financialpost.com/feed/"    
+
+    - id: "cbc"
+      name: "加拿大广播公司"
+      url: "https://www.cbc.ca/cmlink/rss-topstories"  
+
+    - id: "heraldsun"
+      name: "先驱太阳报"
+      url: "https://www.heraldsun.com.au/news/breaking-news/rss"  
+
+      
   #  - id: "politico"
   #    name: "政客"
   #    url: "https://rss.politico.com/playbook.xml"

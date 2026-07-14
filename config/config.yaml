@@ -41,7 +41,7 @@ app:
 # ===============================================================
 schedule:
   enabled: false                        # 是否启用调度系统（true=启用, false=关闭，默认关闭）
-  preset: "morning_evening"             # 预设模板名称（见上方说明）
+  preset: "always_on"             # 预设模板名称（见上方说明）
 
 
 # ===============================================================
@@ -122,47 +122,83 @@ rss:
       url: "http://www.ruanyifeng.com/blog/atom.xml"
       enabled: false                  # 禁用
       # max_age_days: 3               # 示例：推送 3 天内的文章（更新较慢的博客）
-     
-    - id: "yahoo-finance"
-      name: "雅虎财经"
-      url: "https://finance.yahoo.com/news/rssindex"
 
-    - id: "yahoo-news"
-      name: "雅虎新闻"
-      url: "https://news.yahoo.com/rss/mostviewed"
+    - id: "WSJa"
+      name: "华尔街日报"
+      url: "https://rsshub.app/wsj/en-us/world"
+
+    - id: "WSJb"
+      name: "华尔街日报"
+      url: "https://rsshub.app/wsj/en-us/us"
+
+    - id: "WSJc"
+      name: "华尔街日报"
+      url: "https://rsshub.app/wsj/en-us/politics"
+
+    - id: "WSJd"
+      name: "华尔街日报"
+      url: "https://rsshub.app/wsj/en-us/economy"
 
     - id: "the new york times"
       name: "纽约时报"
       url: "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
 
-    - id: "FOX News"
-      name: "福克斯新闻"
-      url: "http://feeds.foxnews.com/foxnews/latest"
-    
-    - id: "WSP"
+    - id: "WSPa"
       name: "华盛顿邮报"
       url: "http://feeds.washingtonpost.com/rss/world"
 
- #   - id: "WSJ.com"
- #     name: "华尔街日报"
- #     url: "https://feeds.a.dj.com/rss/RSSWorldNews.xml"
+    - id: "WSPb"
+      name: "华盛顿邮报"
+      url: "https://rsshub.app/washingtonpost/app/business"
+
+    - id: "WSPc"
+      name: "华盛顿邮报"
+      url: "https://rsshub.app/washingtonpost/app/politics"
+
+    - id: "WSPd"
+      name: "华盛顿邮报"
+      url: "https://rsshub.app/washingtonpost/app/investigations"
+
+    - id: "foreignaffairs"
+      name: "外交事务"
+      url: "https://rsshub.app/foreignaffairs/rss"
+
+    - id: "FOX News"
+      name: "福克斯新闻"
+      url: "http://feeds.foxnews.com/foxnews/latest"
 
     - id: "CNN News"
       name: "CNN新闻"
       url: "http://rss.cnn.com/rss/edition.rss"
 
-    - id: "huffpost"
-      name: "赫芬顿邮报"
-      url: "https://www.huffpost.com/section/world-news/feed"
+    - id: "The Economista"
+      name: "经济学人"
+      url: "https://rsshub.app/economist/espresso"
+
+    - id: "The Economistb"
+      name: "经济学人"
+      url: "https://rsshub.app/economist/business"
+
+    - id: "The Economistc"
+      name: "经济学人"
+      url: "https://rsshub.app/economist/finance-and-economics"
+
+    - id: "Bloomberga"
+      name: "彭博社"
+      url: "https://rsshub.app/bloomberg/bbiz"
+
+    - id: "Bloombergb"
+      name: "彭博社"
+      url: "https://rsshub.app/bloomberg/bpol"
+
+    - id: "Bloombergc"
+      name: "彭博社"
+      url: "https://rsshub.app/bloomberg"
 
     - id: "cnbc"
       name: "CNBC新闻"
       url: "https://www.cnbc.com/id/100003114/device/rss/rss.html"
-
-    - id: "politico"
-      name: "政客"
-      url: "https://rss.politico.com/playbook.xml"
-
+    
     - id: "BBC News"
       name: "BBC新闻"
       url: "http://feeds.bbci.co.uk/news/rss.xml"
@@ -170,6 +206,30 @@ rss:
     - id: "The Guardian"
       name: "卫报"
       url: "https://www.theguardian.com/world/rss"
+
+    - id: "reutersa"
+      name: "路透社"
+      url: "https://rsshub.app/reuters/world"
+    
+    - id: "reutersb"
+      name: "路透社"
+      url: "https://rsshub.app/reuters/business/finance"
+
+    - id: "huffpost"
+      name: "法国赫芬顿邮报"
+      url: "https://www.huffpost.com/section/world-news/feed"
+
+    - id: "lamonde"
+      name: "法国世界报"
+      url: "https://www.cnbc.com/id/100003114/device/rss/rss.html"
+
+    - id: "nikkeia"
+      name: "日经新闻"
+      url: "https://rsshub.app/nikkei/cn/cn/china/economy"
+
+    - id: "nikkeib"
+      name: "日经新闻"
+      url: "https://rsshub.app/nikkei/cn/cn/politicsaeconomy/economic-policy"
 
     - id: "rt"
       name: "RT每日新闻"
@@ -183,10 +243,6 @@ rss:
       name: "伊斯兰通讯社"
       url: "https://www.isna.ir/rss"
 
-  #  - id: "hket.com"
-  #    name: "香港经济日报"
-  #    url: "https://www.hket.com/rss/hongkong"
-
     - id: "South China Morning Post"
       name: "南华早报"
       url: "https://www.scmp.com/rss/91/feed"
@@ -198,6 +254,22 @@ rss:
     - id: "Google News"
       name: "谷歌新闻"
       url: "https://news.google.com/rss"
+
+    - id: "yahoo-finance"
+      name: "雅虎财经"
+      url: "https://finance.yahoo.com/news/rssindex"
+
+    - id: "yahoo-news"
+      name: "雅虎新闻"
+      url: "https://news.yahoo.com/rss/mostviewed"
+
+  #  - id: "politico"
+  #    name: "政客"
+  #    url: "https://rss.politico.com/playbook.xml"
+
+  #  - id: "hket.com"
+  #    name: "香港经济日报"
+  #    url: "https://www.hket.com/rss/hongkong"
       
     # 自定义源示例
     # - id: "custom-feed"
@@ -211,7 +283,7 @@ rss:
 # 4. 报告模式
 # ===============================================================
 report:
-  mode: "current"                     # 报告模式（开启 schedule 后作为默认值，会被 timeline 时段覆盖）
+  mode: "incremental"                     # 报告模式（开启 schedule 后作为默认值，会被 timeline 时段覆盖）
                                       # daily = 当日汇总，按时推送当天所有匹配新闻（会包含之前推过的）
                                       # current = 当前榜单，按时推送当前在榜的匹配新闻（持续在榜的每次都出现）
                                       # incremental = 增量监控，只推送新增内容，零重复（没有新增时不推送）
@@ -482,7 +554,7 @@ ai_analysis:
   max_news_for_analysis: 150        # 参与分析的新闻数量上限（控制 token 成本的关键项）
                                     # 热榜优先占用配额，RSS 用剩余配额，独立展示区不受此限制
 
-  include_rss: false                # 是否包含 RSS 内容进行分析（true=包含, false=不包含）
+  include_rss: true                # 是否包含 RSS 内容进行分析（true=包含, false=不包含）
   include_standalone: true          # 是否纳入独立展示区数据（true=纳入, false=不纳入）
 
   include_rank_timeline: true       # 排名时间线详细程度

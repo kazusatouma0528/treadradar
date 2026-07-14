@@ -149,19 +149,19 @@ rss:
 
     - id: "WSPb"
       name: "华盛顿邮报"
-      url: "https://rsshub.app/washingtonpost/app/business"
+      url: "https://rsshub.rssforever/washingtonpost/app/business"
 
     - id: "WSPc"
       name: "华盛顿邮报"
-      url: "https://rsshub.app/washingtonpost/app/politics"
+      url: "https://rsshub.rssforever/washingtonpost/app/politics"
 
     - id: "WSPd"
       name: "华盛顿邮报"
-      url: "https://rsshub.app/washingtonpost/app/investigations"
+      url: "https://rsshub.rssforever/washingtonpost/app/investigations"
 
     - id: "foreignaffairs"
       name: "外交事务"
-      url: "https://rsshub.app/foreignaffairs/rss"
+      url: "https://rsshub.rssforever/foreignaffairs/rss"
 
     - id: "FOX News"
       name: "福克斯新闻"
@@ -185,15 +185,15 @@ rss:
 
     - id: "Bloomberga"
       name: "彭博社"
-      url: "https://rsshub.app/bloomberg/bbiz"
+      url: "https://rsshub.rssforever/bloomberg/bbiz"
 
     - id: "Bloombergb"
       name: "彭博社"
-      url: "https://rsshub.app/bloomberg/bpol"
+      url: "https://rsshub.rssforever/bloomberg/bpol"
 
     - id: "Bloombergc"
       name: "彭博社"
-      url: "https://rsshub.app/bloomberg"
+      url: "https://rsshub.rssforever/bloomberg"
 
     - id: "cnbc"
       name: "CNBC新闻"

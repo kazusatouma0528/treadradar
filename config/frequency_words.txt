@@ -150,6 +150,7 @@
 [WORD_GROUPS]
 [美政府]
 特朗普
+万斯
 贝森特
 白宫
 美国财政部
@@ -159,6 +160,9 @@
 大选
 中期选举
 美军
+美财政部
+美国务院
+美商务部
 /\bTrump\b/
 /\bDonald Trump\b/
 /\bBessent\b/
@@ -178,16 +182,38 @@
 /\bEntity\b/
 /\bShadow Fleet\b/
 
+[反洗钱&反恐融资]
+洗钱
+反恐融资
+/\bAML\b/
+/\bMoney Laundering\b/
+/\bKYC\b/
+
 [官方]
 习近平
 国务院
 财政部
+中共中央
 /\bXI\b/i
 /\bState Council\b/
 /\bMinistry of Finance\b/
 
+[自然灾害]
+干旱
+暴雨
+台风
+寒潮
+高温
+沙尘暴
+地震
+火山爆发
+海啸
+火灾
+
 [中国]
 中国
+中方
+我国
 /\bChina\b/
 /\bHong Kong\b/
 /\bMacao\b/
@@ -235,11 +261,13 @@
 土耳其
 阿富汗
 中东
+阿联酋
 /\bIraq\b/
 /\bIran\b/
 /\bTurkey\b/
 /\bAfghanistan\b/
 /\bMiddle East\b|\bmideast\b/
+/\bUnited Arab Emirates\b/
 
 [东南亚]
 日本
@@ -247,6 +275,9 @@
 韩国
 新加坡
 印度
+高市早苗
+金正恩
+莫迪
 /\bJapan\b/
 /\bKorea\b/
 /\bSouth Korea\b/

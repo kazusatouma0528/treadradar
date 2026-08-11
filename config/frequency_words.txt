@@ -174,17 +174,17 @@
 /\bpresidential election‌\b|\bmidterm elections‌\b/
 /\bUnited States Armed Forces\b|\bU.S. military\b|\bUS Armed Forces\b/
 
-[制裁]
+[制裁&反洗钱&反恐融资]
 制裁
+洗钱
+反恐融资
+301调查
+贸易战
 /\bSactions\b/
 /\bSDN\b/
 /\bBIS\b/
 /\bEntity\b/
 /\bShadow Fleet\b/
-
-[反洗钱&反恐融资]
-洗钱
-反恐融资
 /\bAML\b/
 /\bMoney Laundering\b/
 /\bKYC\b/
@@ -276,6 +276,7 @@
 新加坡
 印度
 高市早苗
+李在明
 金正恩
 莫迪
 /\bJapan\b/

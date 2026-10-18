@@ -150,6 +150,7 @@ rss:
     - id: "WSPa"
       name: "华盛顿邮报"
       url: "http://feeds.washingtonpost.com/rss/world"
+      enabled: false
 
     - id: "WSPb"
       name: "华盛顿邮报"
@@ -238,6 +239,7 @@ rss:
     - id: "lamonde"
       name: "法国世界报"
       url: "https://www.cnbc.com/id/100003114/device/rss/rss.html"
+      enabled: false
 
     - id: "nikkeia"
       name: "日经新闻"
@@ -276,10 +278,12 @@ rss:
     - id: "yahoo-finance"
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
+      enabled: false
 
     - id: "yahoo-news"
       name: "雅虎新闻"
       url: "https://news.yahoo.com/rss/mostviewed"
+      enabled: false
 
 #以下是新测试路由
 
@@ -310,6 +314,7 @@ rss:
     - id: "heraldsun"
       name: "先驱太阳报"
       url: "https://www.heraldsun.com.au/news/breaking-news/rss"  
+      enabled: false
 
       
   #  - id: "politico"

@@ -147,140 +147,220 @@
 #
 # ───────────────────────────────────────────────────────────────
 
+[GLOBAL_FILTER]
+广告
+推广
+营销
+震惊
+标题党
+体育
+足球
+NBA
+篮球
+网球
+奥运
+世界杯
+娱乐
+明星
+电影
+电视剧
+综艺
+演唱会
+八卦
+美食
+旅游
+时尚
+彩票
+
 [WORD_GROUPS]
-[美政府]
-特朗普
-万斯
-贝森特
-白宫
-美国财政部
-美国国务院
-美国商务部
-美国贸易代表办公室
-大选
-中期选举
-美军
-美财政部
-美国务院
-美商务部
-/\bTrump\b/
-/\bDonald Trump\b/
-/\bBessent\b/
-/\bWhite House\b/
-/\bTreasury\b/
-/\bDepartment of State\b/
-/\bDepartment of Commerce\b|\bDOC\b//
-/\bOffice of the United States Trade Representative\b|\bUSTR\b/
-/\bpresidential election‌\b|\bmidterm elections‌\b/
-/\bUnited States Armed Forces\b|\bU.S. military\b|\bUS Armed Forces\b/
 
-[制裁&反洗钱&反恐融资]
-制裁
-洗钱
-反恐融资
-301调查
-贸易战
-/\bSactions\b/
-/\bSDN\b/
-/\bBIS\b/
-/\bEntity\b/
-/\bShadow Fleet\b/
-/\bAML\b/
-/\bMoney Laundering\b/
-/\bKYC\b/
+# ========================= 第一梯队：最高兴趣 ============================
 
-[官方]
-习近平
-国务院
-财政部
-中共中央
-/\bXI\b/i
-/\bState Council\b/
-/\bMinistry of Finance\b/
-
-[自然灾害]
-干旱
-暴雨
-台风
-寒潮
-高温
-沙尘暴
-地震
-火山爆发
-海啸
-火灾
-
-[中国]
+# —— 涉华专题（你"尤其关注涉及中国"的新闻，整体前置）——
+# 普通词=中国相关；必须词=同时涉及你的核心议题，确保"中国 ∩ 你关心的事"
 中国
-中方
-我国
-/\bChina\b/
-/\bHong Kong\b/
-/\bMacao\b/
+北京
+习近平
+台湾
+中美
+对华
++/(美国|Trump|拜登|Biden|贸易|关税|制裁|半导体|芯片|科技|Russia|Iran|Israel|Gaza|军工|国企|美联储|出口)/
+
+# —— 特朗普言论 / 行政令 / 白宫（你打分最高的一类）——
+特朗普
+Trump
+白宫
+行政令
+总统令
+@12
+
+# —— 2026 中期选举 / 国会立法 ——
+2026中期选举
+中期选举
+参议院选举
+众议院选举
+国会
+参议院
+众议院
+立法
+法案
+midterm
+Senate
+Congress
+legislation
+@10
+
+# —— 美国外交政策 / 国务院 / 盟友 ——
+美国外交
+国务院
+国务卿
+美国盟友
+布林肯
++/(中国|China|俄罗斯|Russia|伊朗|Iran|以色列|Israel|北约|NATO|贸易|制裁)/
 @8
 
-[俄乌]
+# —— 美中关系（涉华核心）——
+美中关系
+中美关系
+对华政策
+中国贸易
+台湾海峡
++/(美国|Trump|拜登|贸易|关税|制裁|芯片|科技|谈判)/
+@10
+
+# ========================= 第二梯队：强兴趣 ============================
+
+# —— 俄乌冲突 / 美俄外交 ——
 俄罗斯
 乌克兰
-/\bRussia\b/
-/\bMoscow\b/
-/\bUkraine\b/
-/\bKyiv‌\b/
-/\bRussia-Ukraine War‌\b/
+普京
+泽连斯基
+俄乌
+Russia
+Ukraine
+Putin
++/(战争|冲突|制裁|谈判|停火|美军|Trump|拜登|北约|NATO)/
+@10
+
+# —— 美伊以冲突（你明确关注，R4 小样本误伤已救回）——
+伊朗
+以色列
+加沙
+哈马斯
+真主党
+黎巴嫩
+胡塞
+Iran
+Israel
+Gaza
++/(战争|冲突|空袭|导弹|制裁|美军|Trump|拜登|打击|以色列|伊朗|加沙)/
 @8
 
-[欧洲]
-欧洲
-英国
-法国
+# —— 美国制裁 / 出口管制 ——
+美国制裁
+出口管制
+实体清单
+技术封锁
+sanctions
++/(中国|China|俄罗斯|Russia|伊朗|Iran)/
+@6
+
+# —— 关税 / 贸易战 ——
+关税
+贸易战
+对华关税
+tariff
+trade war
++/(美国|中国|Trump|拜登|WTO)/
+@6
+
+# —— 半导体 / 芯片（含涉华强化）——
+半导体
+芯片
+tsmc
+nvidia
+intel
+smic
++/(中国|China|北京|Beijing)/
+@6
+
+# —— 飞机发动机 / 航空（你明确关注，R4 小样本误伤已救回）——
+飞机发动机
+航空发动机
+波音
+airbus
+GE航天
+Boeing
++/(中国|China|出口|制裁|订单)/
+@4
+
+# —— AI / 人工智能（你明确关注）——
+/\bAI\b/
+人工智能
+ChatGPT
+OpenAI
+大模型
++/(美国|中国|芯片|监管|政策|军|China|US)/
+@6
+
+# ========================= 第三梯队：稳定兴趣 ============================
+
+# —— 美联储 / 利率 ——
+美联储
+联邦储备
+降息
+加息
+利率决议
+Federal Reserve
++/(美国|US)/
+@5
+
+# —— 美国经济指标 / 形势 ——
+美国通胀
+美国GDP
+美国就业
+美国经济
+美股
+华尔街
+US economy
++/(美国|US)/
+@5
+
+# —— 国际金融风险 ——
+全球金融
+债务危机
+汇率
+资本外流
+financial crisis
+@4
+
+# —— 气候（政策 / 减排 / 极端天气）——
+气候
+碳排放
+净零
+可再生能源
+野火
+洪灾
+climate
++/(政策|协议|危机|美国|中国|policy)/
+@5
+
+# —— 香港（国安 / 经济 / 民生）——
+香港
+港府
+国安法
+Hong Kong
++/(中国|北京|美国|制裁|经济|China)/
+@5
+
+# —— 北约 / 欧洲（中等兴趣）——
+北约
+欧盟
+布鲁塞尔
 德国
-西班牙
-意大利
-比利时
-荷兰
-/\bEurope\b/
-/\bUnited Kingdoms\b|\bEngland\b|\bLondon\b/
-/\bFrance\b|\bParis\b/
-/\bGermany\b|\bBerlin\b/
-/\bSpain\b/
-/\bItaly\b/
-/\bBelgium\b/
-/\bNetherlands\b/
-
-[北美]
-美国
-加拿大
-墨西哥
-/\bUnited States\b|\bAmerica\b/
-/\bCanada\b/
-/\bMexico\b/
-
-[中西亚]
-伊朗
-伊拉克
-土耳其
-阿富汗
-中东
-阿联酋
-/\bIraq\b/
-/\bIran\b/
-/\bTurkey\b/
-/\bAfghanistan\b/
-/\bMiddle East\b|\bmideast\b/
-/\bUnited Arab Emirates\b/
-
-[东南亚]
-日本
-朝鲜
-韩国
-新加坡
-印度
-高市早苗
-李在明
-金正恩
-莫迪
-/\bJapan\b/
-/\bKorea\b/
-/\bSouth Korea\b/
-/\bSingapore\b/
+法国
+英国
+NATO
++/(美国|制裁|俄罗斯|防务|军费|Russia|US)/
+@4
 /\bIndia\b/
